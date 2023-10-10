@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="l2I-X4-Fku">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AppThemeExercise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="KT3-to-NrO">
+                                <rect key="frame" x="20" y="79" width="353" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Red"/>
+                                    <segment title="Blue"/>
+                                    <segment title="Gray"/>
+                                </segments>
+                                <connections>
+                                    <action selector="didPickTheme:" destination="BYZ-38-t0r" eventType="valueChanged" id="Nvg-GP-Kbv"/>
+                                </connections>
+                            </segmentedControl>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tGw-fn-Fe7">
+                                <rect key="frame" x="20" y="213" width="353" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rF3-C2-fyk">
+                                <rect key="frame" x="20" y="684" width="353" height="37"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BSc-2E-KIj">
+                                <rect key="frame" x="20" y="731" width="353" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="HJi-Ir-pvb"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <segue destination="3Ar-72-6S9" kind="show" id="MzD-W4-rtb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rF3-C2-fyk" secondAttribute="trailing" constant="20" id="J5S-s5-8vO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BSc-2E-KIj" secondAttribute="bottom" constant="30" id="LVj-4H-oid"/>
+                            <constraint firstItem="rF3-C2-fyk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="VAE-rv-HLG"/>
+                            <constraint firstItem="BSc-2E-KIj" firstAttribute="top" secondItem="rF3-C2-fyk" secondAttribute="bottom" constant="10" id="Vn4-kx-y7s"/>
+                            <constraint firstItem="BSc-2E-KIj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Wks-pL-aHK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BSc-2E-KIj" secondAttribute="trailing" constant="20" id="e71-Ld-bpz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="RvS-do-c6O"/>
+                    <connections>
+                        <outlet property="carBrandLabel" destination="rF3-C2-fyk" id="kDm-HF-6lM"/>
+                        <outlet property="carImageView" destination="tGw-fn-Fe7" id="gqM-6x-iVz"/>
+                        <outlet property="myButton" destination="BSc-2E-KIj" id="W5t-Do-uKE"/>
+                        <outlet property="themePickerSegment" destination="KT3-to-NrO" id="bhh-g2-r8l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1063.3587786259541" y="3.5211267605633805"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="N2s-LJ-AB3">
+            <objects>
+                <viewController id="3Ar-72-6S9" customClass="DetailsViewController" customModule="AppThemeExercise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7xK-Ug-U49">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2H-cm-82Q">
+                                <rect key="frame" x="329" y="123" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="Guh-iA-cRd"/>
+                                    <constraint firstAttribute="height" constant="44" id="nne-nH-KkO"/>
+                                </constraints>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="didTapCloseButton:" destination="3Ar-72-6S9" eventType="touchUpInside" id="JUk-4d-1nT"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="msC-PM-rYH">
+                                <rect key="frame" x="20" y="199" width="353" height="32"/>
+                                <segments>
+                                    <segment title="Red"/>
+                                    <segment title="Blue"/>
+                                    <segment title="Gray"/>
+                                </segments>
+                                <connections>
+                                    <action selector="didTapSegmentControl:" destination="3Ar-72-6S9" eventType="valueChanged" id="nG2-iC-mgs"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="akh-1A-P10"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="u2H-cm-82Q" firstAttribute="top" secondItem="akh-1A-P10" secondAttribute="top" constant="20" id="70z-gG-miE"/>
+                            <constraint firstItem="msC-PM-rYH" firstAttribute="leading" secondItem="akh-1A-P10" secondAttribute="leading" constant="20" id="D9V-We-zxJ"/>
+                            <constraint firstItem="msC-PM-rYH" firstAttribute="top" secondItem="u2H-cm-82Q" secondAttribute="bottom" constant="32" id="cD3-tZ-ZbL"/>
+                            <constraint firstItem="akh-1A-P10" firstAttribute="trailing" secondItem="u2H-cm-82Q" secondAttribute="trailing" constant="20" id="f2v-sr-VWt"/>
+                            <constraint firstItem="akh-1A-P10" firstAttribute="trailing" secondItem="msC-PM-rYH" secondAttribute="trailing" constant="20" id="hwq-oH-oSv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="lRl-im-V4U"/>
+                    <connections>
+                        <outlet property="closeButton" destination="u2H-cm-82Q" id="cpQ-G2-WUo"/>
+                        <outlet property="customSegmentControl" destination="msC-PM-rYH" id="KvU-yv-Ils"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fGu-eV-WeK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2266.4122137404579" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1t0-HG-0zk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="l2I-X4-Fku" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3gy-oN-raE">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="oil-6v-WyS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XjR-x8-D7H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.64122137404578" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

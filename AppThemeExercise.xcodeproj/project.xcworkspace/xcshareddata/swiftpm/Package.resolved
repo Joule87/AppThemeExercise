@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "themezerkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Joule87/ThemezerKit",
+      "state" : {
+        "branch" : "main",
+        "revision" : "57a596e24cc4efca0f971ceaa8b7b692b33cc4d1"
+      }
+    }
+  ],
+  "version" : 2
+}
