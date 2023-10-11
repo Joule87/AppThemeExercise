@@ -15,6 +15,7 @@
 		197EBDD92ACF8F9400CE4075 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 197EBDD72ACF8F9400CE4075 /* LaunchScreen.storyboard */; };
 		198F1E962AD6069000DDB573 /* Themezer in Frameworks */ = {isa = PBXBuildFile; productRef = 198F1E952AD6069000DDB573 /* Themezer */; };
 		1995B7032AD0D65B00CDC8F9 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1995B7022AD0D65B00CDC8F9 /* DetailsViewController.swift */; };
+		19DFD71F2AD6E57500C53834 /* GreenTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DFD71E2AD6E57500C53834 /* GreenTheme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		197EBDD82ACF8F9400CE4075 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		197EBDDA2ACF8F9400CE4075 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1995B7022AD0D65B00CDC8F9 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		19DFD71E2AD6E57500C53834 /* GreenTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenTheme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		197EBDCB2ACF8F9300CE4075 /* AppThemeExercise */ = {
 			isa = PBXGroup;
 			children = (
+				19DFD71D2AD6E53100C53834 /* Theme */,
 				1995B7012AD0D64400CDC8F9 /* ViewController */,
 				197EBDCC2ACF8F9300CE4075 /* AppDelegate.swift */,
 				197EBDCE2ACF8F9300CE4075 /* SceneDelegate.swift */,
@@ -78,6 +81,14 @@
 				1995B7022AD0D65B00CDC8F9 /* DetailsViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		19DFD71D2AD6E53100C53834 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				19DFD71E2AD6E57500C53834 /* GreenTheme.swift */,
+			);
+			path = Theme;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +172,7 @@
 				197EBDCD2ACF8F9300CE4075 /* AppDelegate.swift in Sources */,
 				197EBDCF2ACF8F9300CE4075 /* SceneDelegate.swift in Sources */,
 				1995B7032AD0D65B00CDC8F9 /* DetailsViewController.swift in Sources */,
+				19DFD71F2AD6E57500C53834 /* GreenTheme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

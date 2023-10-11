@@ -14,9 +14,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        ThemeManager.shared.config()
-//        let t = ThemeManager.shared.themes[2]
-//        ThemeManager.shared.apply(t)
+        //ThemeManager.shared.config()
+        //let t = ThemeManager.shared.themes[2]
+        //ThemeManager.shared.apply(t)
+        ThemeManager.shared.apply(GreenTheme())
         return true
     }
 
@@ -36,4 +37,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
-
