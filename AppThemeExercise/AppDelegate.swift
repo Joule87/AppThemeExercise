@@ -17,7 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //ThemeManager.shared.config()
         //let t = ThemeManager.shared.themes[2]
         //ThemeManager.shared.apply(t)
-        ThemeManager.shared.apply(GreenTheme())
+        let theme: Themeable = Bool.random() ? GreenTheme() : RedTheme()
+        ThemeManager.shared.apply(theme)
+        
         return true
     }
 

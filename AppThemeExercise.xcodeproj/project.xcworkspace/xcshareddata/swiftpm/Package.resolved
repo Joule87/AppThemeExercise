@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Joule87/ThemezerKit",
       "state" : {
-        "branch" : "main",
-        "revision" : "57a596e24cc4efca0f971ceaa8b7b692b33cc4d1"
+        "revision" : "607458dbf1867564009c4cf79bee6507817f120d",
+        "version" : "0.0.3"
       }
     }
   ],

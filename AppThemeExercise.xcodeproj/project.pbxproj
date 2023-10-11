@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19477B412AD7045B00FE90D3 /* Themezer in Frameworks */ = {isa = PBXBuildFile; productRef = 19477B402AD7045B00FE90D3 /* Themezer */; };
 		197EBDCD2ACF8F9300CE4075 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197EBDCC2ACF8F9300CE4075 /* AppDelegate.swift */; };
 		197EBDCF2ACF8F9300CE4075 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197EBDCE2ACF8F9300CE4075 /* SceneDelegate.swift */; };
 		197EBDD12ACF8F9300CE4075 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197EBDD02ACF8F9300CE4075 /* ViewController.swift */; };
 		197EBDD42ACF8F9300CE4075 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 197EBDD22ACF8F9300CE4075 /* Main.storyboard */; };
 		197EBDD62ACF8F9400CE4075 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 197EBDD52ACF8F9400CE4075 /* Assets.xcassets */; };
 		197EBDD92ACF8F9400CE4075 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 197EBDD72ACF8F9400CE4075 /* LaunchScreen.storyboard */; };
-		198F1E962AD6069000DDB573 /* Themezer in Frameworks */ = {isa = PBXBuildFile; productRef = 198F1E952AD6069000DDB573 /* Themezer */; };
 		1995B7032AD0D65B00CDC8F9 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1995B7022AD0D65B00CDC8F9 /* DetailsViewController.swift */; };
 		19DFD71F2AD6E57500C53834 /* GreenTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DFD71E2AD6E57500C53834 /* GreenTheme.swift */; };
 /* End PBXBuildFile section */
@@ -36,7 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				198F1E962AD6069000DDB573 /* Themezer in Frameworks */,
+				19477B412AD7045B00FE90D3 /* Themezer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,7 +108,7 @@
 			);
 			name = AppThemeExercise;
 			packageProductDependencies = (
-				198F1E952AD6069000DDB573 /* Themezer */,
+				19477B402AD7045B00FE90D3 /* Themezer */,
 			);
 			productName = AppThemeExercise;
 			productReference = 197EBDC92ACF8F9300CE4075 /* AppThemeExercise.app */;
@@ -139,7 +139,7 @@
 			);
 			mainGroup = 197EBDC02ACF8F9300CE4075;
 			packageReferences = (
-				198F1E942AD6069000DDB573 /* XCRemoteSwiftPackageReference "ThemezerKit" */,
+				19477B3F2AD7045B00FE90D3 /* XCRemoteSwiftPackageReference "ThemezerKit" */,
 			);
 			productRefGroup = 197EBDCA2ACF8F9300CE4075 /* Products */;
 			projectDirPath = "";
@@ -397,20 +397,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		198F1E942AD6069000DDB573 /* XCRemoteSwiftPackageReference "ThemezerKit" */ = {
+		19477B3F2AD7045B00FE90D3 /* XCRemoteSwiftPackageReference "ThemezerKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Joule87/ThemezerKit";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.3;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		198F1E952AD6069000DDB573 /* Themezer */ = {
+		19477B402AD7045B00FE90D3 /* Themezer */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 198F1E942AD6069000DDB573 /* XCRemoteSwiftPackageReference "ThemezerKit" */;
+			package = 19477B3F2AD7045B00FE90D3 /* XCRemoteSwiftPackageReference "ThemezerKit" */;
 			productName = Themezer;
 		};
 /* End XCSwiftPackageProductDependency section */
